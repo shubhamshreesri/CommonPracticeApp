@@ -17,4 +17,8 @@ public class Mainviewmodel extends AndroidViewModel {
     public Customer getCustomer() {
         return this.customer;
     }
+
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
+    }
 }

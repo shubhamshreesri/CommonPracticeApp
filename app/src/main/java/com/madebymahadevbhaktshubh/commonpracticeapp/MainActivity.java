@@ -2,6 +2,7 @@ package com.madebymahadevbhaktshubh.commonpracticeapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.lifecycle.ViewModelProviders;
 
 import android.os.Bundle;
@@ -27,7 +28,8 @@ public class MainActivity extends AppCompatActivity {
 //        mainxml.setCustomer(customer);
         //khud ka model class bana ke use kiya 60% done here
 
-        mainviewmodel= ViewModelProviders.of(this).get(Mainviewmodel.class);
+     //   mainviewmodel= ViewModelProviders.of(this).get(Mainviewmodel.class);
+        mainviewmodel=new ViewModelProvider(this).get(Mainviewmodel.class);
         mainxml.setCustomer(mainviewmodel.getCustomer());
 
      }
